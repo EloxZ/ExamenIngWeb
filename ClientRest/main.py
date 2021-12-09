@@ -16,3 +16,5 @@ pprint.pprint(response.json())
 # Post edit
 response = requests.post('http://localhost:3000/datos/edit/61b0e489c5a28036bc1ae7a5', json = {"hola":"pepe", "numero2":3})
 pprint.pprint(response.json())
+
+input('Presiona ENTER para salir.')

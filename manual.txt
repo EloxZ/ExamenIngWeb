@@ -1,0 +1,25 @@
+--- Manual de instalación ---
+
+Estos son los pasos para poder ejecutar el código fuente de ambos programas, sin embargo he dejado una versión compilada si se quieren omitir los pasos
+
+ServerRest/ingweb-win.exe             (pkg .)
+ClientRest/dist/main.exe              (pyinstaller -F main.py)
+
+
+--> Servidor
+
+1. Instalar Node.js
+2. Abrir una terminal con el directorio del proyecto "ServerRest" y poner los comandos para instalar los modulos
+	npm install
+	npm install -g newman
+y el siguiente comando para iniciar el servidor
+	npm start
+
+--> Cliente
+
+1. Instalar Python
+2. Instalar pip
+	En el directorio "ClientRest" abrir get-pip.py con "py get-pip.py" en una terminal
+3. Instalar la dependencia de los requests con "pip install requests"
+4. Ejecutar main.py con "py main.py"
+
